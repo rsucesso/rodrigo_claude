@@ -28,8 +28,6 @@ rm=M(f'{SP}/sheets/rugby_meta.json')
 sheet('rug_','rugby',dict(stance=(0,0),walk1=(1,1),walk2=(2,1),attack=(3,1),victory=(4,1),stance2=(5,2),block=(6,2),taunt=(7,2),down=(8,2)),126,[rm['f0']['h'],rm['f4']['h'],rm['f5']['h']],{'attack':140,'down':'c'})
 pm=M(f'{SP}/sheets/punk_meta.json')
 sheet('punk_','punk',dict(stance=(0,0),attack=(1,1),walk1=(2,1),walk2=(3,1),victory=(4,1),stance2=(5,2),block=(6,2),taunt=(7,2),down=(8,2)),126,[pm['f0']['h'],pm['f4']['h']-18,pm['f5']['h']-14],{'attack':109,'walk1':147,'walk2':160,'victory':56,'stance2':126,'taunt':102,'down':'c'})
-qm=M(f'{SP}/sheets/repgray_meta.json')
-sheet('rp_','repgray',dict(stance=(0,0),walk1=(1,1),walk2=(2,1),walk3=(3,1),victory=(4,1),thumbs=(5,2),punch=(6,2),block=(7,2),down=(8,2)),96,[qm['f0']['h'],qm['f4']['h'],qm['f5']['h']],{'down':'c'})
 MAXH=240
 js=['const SPRITE_DATA={'];META={}
 def enc(im,colors=80):
@@ -42,7 +40,7 @@ for key,path,s,ax in E:
     axv=w/2 if ax=='c' else ax
     META[key]={'w':im.width,'h':im.height,'ax':round(axv*r,1),'s':round(s/r,4)}
     d=enc(im);tot+=len(d);js.append(f"  {key}:'data:image/png;base64,{d}',")
-for key,path in (('face',f'{SP}/spr/face.png'),('faceAngry',f'{SP}/spr/faceAngry.png'),('rp_face',f'{SP}/sheets/rp_face.png'),('rp_faceAngry',f'{SP}/sheets/rp_faceAngry.png')):
+for key,path in (('face',f'{SP}/spr/face.png'),('faceAngry',f'{SP}/spr/faceAngry.png')):
     d=enc(Image.open(path).convert('RGBA'),96);tot+=len(d);js.append(f"  {key}:'data:image/png;base64,{d}',")
 js.append('};');js.append('const SPRITE_META='+json.dumps(META)+';')
 open(f'{SP}/sprites.js','w').write('\n'.join(js));print('bytes',tot,len(E))
