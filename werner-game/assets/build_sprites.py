@@ -34,6 +34,9 @@ wmm=M(f'{SP}/sheets/women_meta.json')
 for k,m in wmm.items():
     ref=225 if m['panel']==1 else m['h']
     E.append(('wm_'+k,f'{SP}/sheets/women_{k}.png',86/ref,m['ax']))
+for di in range(4):
+    for k,src in dict(tied='tied2',w0='walkA0',w1='walkA1',w2='walkB0',w3='walkB1',sit=('thank3' if di!=2 else 'tied0'),play='m30').items():
+        E.append((f'dg{di}_{k}',f'{SP}/sheets/dog{di}_{src}.png',(.36 if k=='tied' else .3),'c'))
 MAXH=240
 js=['const SPRITE_DATA={'];META={}
 def enc(im,colors=80):
