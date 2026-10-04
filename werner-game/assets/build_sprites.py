@@ -28,6 +28,12 @@ rm=M(f'{SP}/sheets/rugby_meta.json')
 sheet('rug_','rugby',dict(stance=(0,0),walk1=(1,1),walk2=(2,1),attack=(3,1),victory=(4,1),stance2=(5,2),block=(6,2),taunt=(7,2),down=(8,2)),126,[rm['f0']['h'],rm['f4']['h'],rm['f5']['h']],{'attack':140,'down':'c'})
 pm=M(f'{SP}/sheets/punk_meta.json')
 sheet('punk_','punk',dict(stance=(0,0),attack=(1,1),walk1=(2,1),walk2=(3,1),victory=(4,1),stance2=(5,2),block=(6,2),taunt=(7,2),down=(8,2)),126,[pm['f0']['h'],pm['f4']['h']-18,pm['f5']['h']-14],{'attack':109,'walk1':147,'walk2':160,'victory':56,'stance2':126,'taunt':102,'down':'c'})
+bm=M(f'{SP}/sheets/baron_meta.json')
+sheet('bar_','baron',dict(stance=(0,0),attack=(1,1),walk1=(2,1),walk2=(3,1),victory=(4,1),stance2=(5,2),block=(6,2),taunt=(7,2),down=(8,2)),132,[bm['f0']['h']-40,bm['f4']['h']-40,bm['f5']['h']-32],{'stance':180,'attack':117,'walk1':150,'walk2':120,'victory':65,'stance2':101,'block':98,'taunt':98,'down':'c'})
+wmm=M(f'{SP}/sheets/women_meta.json')
+for k,m in wmm.items():
+    ref=225 if m['panel']==1 else m['h']
+    E.append(('wm_'+k,f'{SP}/sheets/women_{k}.png',86/ref,m['ax']))
 MAXH=240
 js=['const SPRITE_DATA={'];META={}
 def enc(im,colors=80):
