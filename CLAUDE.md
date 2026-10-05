@@ -14,8 +14,10 @@ mantém um abrigo com centenas de cães). Presente do Rodrigo. Roda no celular, 
   não há `main`, por isso não há PR).
 - **Prévia online (privada)**: https://claude.ai/artifact/GzAPpLLVqdyAvLhS3SMEc1 — republicar com o
   Artifact tool a partir de uma cópia do `index.html` sem `<!doctype>/<html>/<head>/<body>`.
-- **Produção**: https://intellivent.com.br/wg/ — o arquivo também está no repo `rsucesso/intellivent`,
-  branch `claude/werner-game-wg`, em `app/wg/index.html`.
+- **Produção**: https://intellivent.com.br/wg/ — **no ar desde 2026-10-05**. O arquivo também está
+  no repo `rsucesso/intellivent`, branch `claude/werner-game-wg`, em `app/wg/index.html`.
+- **Clone local** (PC do Rodrigo, de onde se publica): `G:\Meu Drive\CLAUDE\Projetos\WernerJogo`.
+  É de lá que dá pra trabalhar E publicar na mesma sessão.
 
 ## Deploy (Hostinger)
 
@@ -27,9 +29,23 @@ git fetch origin && git checkout origin/claude/werner-game-wg -- app/wg/index.ht
 bash "/g/Meu Drive/CLAUDE/Projetos/scripts/intellivent-deploy.sh" wg/index.html
 ```
 
-Se o script reclamar do `php -l` por ser `.html`, subir pelo Gerenciador de Arquivos em
-`domains/intellivent.com.br/public_html/wg/`. **Não usar FTP** (o host recusa com 450).
-Status em 2026-10-05: **ainda não confirmado no ar** — conferir se /wg/ abre.
+O script **não reclama** de `.html` — ele só roda `php -l` em arquivo `.php`. O que confunde é
+outra coisa: para arquivo que não é PHP ele imprime só "Sintaxe local: ok" e **termina sem a linha
+de confirmação do servidor**, o que parece falha e não é. Confira à mão:
+
+```bash
+curl -s -o /dev/null -w "%{http_code} %{size_download}\n" https://intellivent.com.br/wg/
+```
+
+O status tem que ser **200** e o tamanho tem que bater com o arquivo local. **Nunca confira por
+data**: o `tar` preserva a mtime, então o arquivo chega "velho" no servidor e dá falso negativo.
+**Não usar FTP** (o host recusa com 450). Se o `git fetch` falhar com `bad object
+refs/desktop.ini`, rode `find .git -name desktop.ini -type f -delete` — é o Drive criando lixo
+dentro do `.git`, e isso derruba o fetch inteiro, não só o commit.
+
+**Publicado e conferido em 2026-10-05**: /wg/ responde 200 com os 1.432.641 bytes (mesmo md5 do
+`werner-game/index.html`), a tela de título e o intro rodam, a fase 1 entra, o teclado responde e
+o console não acusa erro.
 
 Ao atualizar o jogo: copiar `werner-game/index.html` para `app/wg/index.html` do intellivent,
 commitar na branch e repetir o deploy.
@@ -50,7 +66,7 @@ commitar na branch e repetir o deploy.
 
 ## Pendências / próximos passos
 
-1. Confirmar o deploy em intellivent.com.br/wg/.
+1. ~~Confirmar o deploy em intellivent.com.br/wg/~~ — **feito em 2026-10-05**: no ar e jogável.
 2. **Cenários**: hoje são desenhados por código, abaixo do nível dos sprites. O Rodrigo vai gerar
    no Gemini: panorâmicas 3:1, emenda horizontal perfeita, chão plano no terço de baixo (linha do
    chão a 65% da altura), sem personagens. Integrar como fundo repetido com parallax.
