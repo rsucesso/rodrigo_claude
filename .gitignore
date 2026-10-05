@@ -1,0 +1,4 @@
+# Lixo que o Google Drive cria dentro da pasta sincronizada.
+# Chega a aparecer dentro do .git e derrubar o fetch inteiro.
+desktop.ini
+Thumbs.db
