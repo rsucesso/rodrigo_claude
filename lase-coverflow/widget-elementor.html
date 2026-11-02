@@ -14,9 +14,12 @@
                                  (no editor do Elementor ele continua visível)
     data-autoplay="3"            segundos entre trocas automáticas (0 = desligado);
                                  pausa com o mouse em cima ou enquanto a pessoa navega
+    data-abertura="sim"          roleta de abertura quando o bloco aparece na tela:
+                                 gira rápido, conta os palestrantes e para num sorteado
+                                 ("nao" = abre direto num palestrante sorteado)
     data-abrir-perfil="sim"      clicar na capa central abre o perfil
 ============================================================ -->
-<div class="lase-cf" data-fonte="" data-ocultar-fonte="nao" data-autoplay="3" data-abrir-perfil="sim"
+<div class="lase-cf" data-fonte="" data-ocultar-fonte="nao" data-autoplay="3" data-abertura="sim" data-abrir-perfil="sim"
      role="region" aria-roledescription="carrossel" aria-label="Palestrantes do LASE 2026">
   <div class="lase-cf__stage" tabindex="0" aria-label="Use as setas para navegar">
     <div class="lase-cf__floor"></div>
@@ -92,6 +95,12 @@
 .lase-cf__range::-moz-range-thumb{width:18px; height:18px; border-radius:50%; border:0; background:var(--neon); box-shadow:0 0 12px var(--neon)}
 .lase-cf__count{text-align:center; font-size:12px; letter-spacing:.12em; color:rgba(191,244,238,.6); margin-top:10px}
 .lase-cf__vazio{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--txt2); padding:20px; text-align:center}
+.lase-cf.is-girando .lase-cf__nome{font-size:clamp(26px,3.4vw,40px); color:var(--neon); text-shadow:0 0 22px rgba(83,223,209,.6); font-variant-numeric:tabular-nums}
+.lase-cf.is-girando .lase-cf__info{transition:none}
+.lase-cf.is-pulso .lase-cf__item.is-center .lase-cf__cover{animation:lase-cf-pulso 1.1s ease-out}
+@keyframes lase-cf-pulso{
+  0%{box-shadow:0 10px 30px rgba(0,0,0,.55),0 0 0 2px var(--neon),0 0 70px 18px rgba(83,223,209,.75)}
+  100%{box-shadow:0 10px 30px rgba(0,0,0,.55),0 0 0 1px rgba(83,223,209,.55),0 0 26px rgba(83,223,209,.28)}}
 @media (prefers-reduced-motion:reduce){.lase-cf__info{transition:none}}
 </style>
 
@@ -168,7 +177,7 @@
       a[0].src=f; a[1].src=f;
     }
 
-    var N=dados.length, W=200, VIS=7, pos=0, alvo=0, atual=-1, raf=0;
+    var N=dados.length, W=200, VIS=7, pos=0, alvo=0, atual=-1, raf=0, girando=false, esperando=false, rafGiro=0;
     range.max=N-1;
 
     function medir(){
@@ -196,7 +205,7 @@
         el.classList.toggle('is-center',a<0.5);
       }
       var c=md(Math.round(pos));
-      if(c!==atual){ atual=c; mostrarTexto(c); }
+      if(c!==atual){ atual=c; if(girando){ range.value=c; count.textContent=(c+1)+' / '+N; } else mostrarTexto(c); }
     }
     var tFade=0;
     function mostrarTexto(i){
@@ -213,6 +222,7 @@
       pos+=dif*0.16; render(); raf=requestAnimationFrame(loop);
     }
     function irPara(i){
+      pararAbertura();
       alvo=i;
       if(!raf) raf=requestAnimationFrame(loop);
       reiniciarAuto();
@@ -222,6 +232,7 @@
     var arrastando=false, x0=0, p0=0, moveu=false, idPtr=null;
     stage.addEventListener('pointerdown',function(e){
       if(e.button&&e.button!==0) return;
+      pararAbertura();
       arrastando=true; moveu=false; x0=e.clientX; p0=pos; idPtr=e.pointerId;
       if(raf){ cancelAnimationFrame(raf); raf=0; }
     });
@@ -279,7 +290,57 @@
     root.addEventListener('pointerenter',function(e){ if(e.pointerType==='mouse') emCima=true; });
     root.addEventListener('pointerleave',function(e){ if(e.pointerType==='mouse'){ emCima=false; reiniciarAuto(); } });
 
-    medir(); render(); reiniciarAuto();
+    // ===== abertura: roleta que para num palestrante sorteado =====
+    var reduzir=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var comAbertura=root.getAttribute('data-abertura')!=='nao' && !reduzir && N>3;
+    var voltas=comAbertura?Math.min(N*2,40+Math.floor(Math.random()*Math.max(1,Math.min(N,40)))):0;
+    var sorteado=Math.floor(Math.random()*N);
+    var inicio=md(sorteado-voltas);           // começa aqui e anda "voltas" capas até o sorteado
+    pos=alvo=inicio;
+    function plural(n){ return n+(n===1?' palestrante':' palestrantes'); }
+    function pararAbertura(){
+      if(!girando && !esperando) return;
+      esperando=false; root.setAttribute('data-aberto','1');
+      girando=false; cancelAnimationFrame(rafGiro); root.classList.remove('is-girando');
+      pos=alvo=Math.round(pos); atual=-1; render();
+    }
+    function abrir(){
+      if(!comAbertura || girando || root.getAttribute('data-aberto')) { reiniciarAuto(); return; }
+      root.setAttribute('data-aberto','1'); esperando=false;
+      // pré-carrega as fotos do caminho para não passar capa vazia
+      for(var k=0;k<=voltas+VIS;k++) carregar(md(inicio+k-VIS));
+      girando=true; root.classList.add('is-girando');
+      info.classList.remove('is-fading'); elCargo.textContent='confirmados no LASE 2026';
+      var t0=performance.now(), dur=Math.min(4200,1800+voltas*45), p0g=pos;
+      function ease(t){ return 1-Math.pow(1-t,4); }
+      function passo(agora){
+        if(!girando) return;
+        var t=Math.min(1,(agora-t0)/dur);
+        pos=alvo=p0g+voltas*ease(t); render();
+        elNome.textContent=plural(Math.round(N*Math.min(1,ease(Math.min(1,t/0.75)))));
+        if(t<1){ rafGiro=requestAnimationFrame(passo); return; }
+        girando=false; root.classList.remove('is-girando');
+        pos=alvo=Math.round(pos); atual=-1;
+        setTimeout(function(){ render(); root.classList.add('is-pulso');
+          setTimeout(function(){ root.classList.remove('is-pulso'); },1200); },500);
+        reiniciarAuto();
+      }
+      rafGiro=requestAnimationFrame(passo);
+    }
+
+    medir();
+    if(comAbertura){
+      // até o bloco aparecer na tela: capas paradas e o contador zerado
+      girando=true; render(); girando=false; esperando=true;
+      root.classList.add('is-girando');
+      elNome.textContent=plural(0); elCargo.textContent='confirmados no LASE 2026';
+      if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(en){
+          if(en[0].isIntersecting){ io.disconnect(); abrir(); }
+        },{threshold:0.45});
+        io.observe(stage);
+      } else abrir();
+    } else { render(); reiniciarAuto(); }
     var tRes=0;
     window.addEventListener('resize',function(){ clearTimeout(tRes); tRes=setTimeout(function(){ medir(); render(); },100); });
   }
