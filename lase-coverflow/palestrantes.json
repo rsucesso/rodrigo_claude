@@ -1,0 +1,824 @@
+[
+ {
+  "nome": "Adrian Vargas",
+  "desc": "Engenheiro de Aplicação, WEG",
+  "foto": "https://viex-americas.com/wp-content/uploads/Adrian-Vargas.jpg",
+  "link": "https://viex-americas.com/adrian-vargas/"
+ },
+ {
+  "nome": "Adriana Coli",
+  "desc": "Sócia Fundadora, Coli Advocacia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Adriana-Coli.jpg",
+  "link": "https://viex-americas.com/adriana-coli/"
+ },
+ {
+  "nome": "Alejandro Giraldo Pérez",
+  "desc": "Especialista de Meio Ambiente",
+  "foto": "https://viex-americas.com/wp-content/uploads/Alejandro-Giraldo-Perez.jpg",
+  "link": "https://viex-americas.com/alejandro-giraldo-perez/"
+ },
+ {
+  "nome": "Alex Sander Soares",
+  "desc": "Diretor de Relacionamento, Onegreen",
+  "foto": "https://viex-americas.com/wp-content/uploads/palestrante-alexsander.png",
+  "link": "https://viex-americas.com/alex-sander-soares/"
+ },
+ {
+  "nome": "Alexandre Nunes da Rosa",
+  "desc": "Diretor, MRS Ambiental",
+  "foto": "https://viex-americas.com/wp-content/uploads/palestrante-alexandre-Nunes-da-Rosa.png",
+  "link": "https://viex-americas.com/alexandre-nunes-da-rosa/"
+ },
+ {
+  "nome": "Alexandre Sion",
+  "desc": "Sócio-Fundador, Sion Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/palestrante-alexandre-sion.png",
+  "link": "https://viex-americas.com/alexandre-sion/"
+ },
+ {
+  "nome": "Alexei Vivan",
+  "desc": "Presidente, FMASE e Diretor Presidente, ABCE",
+  "foto": "https://viex-americas.com/wp-content/uploads/alexei-vivan-1.jpg",
+  "link": "https://viex-americas.com/alexei-vivan/"
+ },
+ {
+  "nome": "Aline Carvalho",
+  "desc": "Coordenadora do Componente Indígena de Empreendimentos Lineares, FUNAI",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Aline-Maciel-de-Carvalho.jpg",
+  "link": "https://viex-americas.com/aline-carvalho/"
+ },
+ {
+  "nome": "Ana Cupelo",
+  "desc": "Sustainability Manager, Equinor",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ana-Cupelo.jpg",
+  "link": "https://viex-americas.com/ana-cupelo/"
+ },
+ {
+  "nome": "Ana de Godoy Weisz",
+  "desc": "Gerente de Meio Ambiente e Responsabilidade Social, Gás Natural Açu – GNA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ana-de-Godoy-Weisz.jpg",
+  "link": "https://viex-americas.com/ana-de-godoy-weisz/"
+ },
+ {
+  "nome": "Ana Paula Patias Guimarães",
+  "desc": "Agente profissional, IAT-PR",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ana-Paula-Patias-Guimaraes-1.jpg",
+  "link": "https://viex-americas.com/ana-paula-patias-guimaraes/"
+ },
+ {
+  "nome": "Ana Raquel Paiva Martins",
+  "desc": "Chefe do Departamento de Risco Social, Ambiental e Climático, BNDES",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ana-Raquel-Paiva-Martins.jpg",
+  "link": "https://viex-americas.com/ana-raquel-paiva-martins/"
+ },
+ {
+  "nome": "Ângela de Oliveira",
+  "desc": "Diretora de Comunicação e Relações Institucionais, ABiogás",
+  "foto": "https://viex-americas.com/wp-content/uploads/Angela-de-Oliveira.jpg",
+  "link": "https://viex-americas.com/angela-de-oliveira/"
+ },
+ {
+  "nome": "Augusto Noce",
+  "desc": "Gerente de Meio Ambiente Corporativo, SPIC Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Augusto.jpg",
+  "link": "https://viex-americas.com/augusto-mercer-noce/"
+ },
+ {
+  "nome": "Avner Vieira",
+  "desc": "Gerente de Sustentabilidade, Elera Renováveis",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Avner.jpg",
+  "link": "https://viex-americas.com/avner-vieira/"
+ },
+ {
+  "nome": "Beatriz Paulo de Frontin",
+  "desc": "Sócia de Ambiental e Mudanças Climáticas, Veirano Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/beatriz-frontin.jpg",
+  "link": "https://viex-americas.com/beatriz-paulo-de-frontin/"
+ },
+ {
+  "nome": "Caio Junqueira",
+  "desc": "Repórter e Analista Político, CNN Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Caio-Junqueira.jpg",
+  "link": "https://viex-americas.com/caio-junqueira/"
+ },
+ {
+  "nome": "Camila Boechat",
+  "desc": "Coordenadora Geral de Segurança Química, MMA e Coordenadora Nacional, Projeto PCB Responsável",
+  "foto": "https://viex-americas.com/wp-content/uploads/Camila-Boechat.jpg",
+  "link": "https://viex-americas.com/camila-boechat/"
+ },
+ {
+  "nome": "Cecilia Turatti",
+  "desc": "Coordenadora Geral de Licenciamento Ambiental em Territórios Quilombolas, INCRA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Cecilia-Turatti.jpg",
+  "link": "https://viex-americas.com/cecilia-turatti/"
+ },
+ {
+  "nome": "Cezar Pinha",
+  "desc": "Analista de Licenciamento Ambiental, INEMA BA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Cezar.jpg",
+  "link": "https://viex-americas.com/cezar-pinha/"
+ },
+ {
+  "nome": "Charles Rodrigues Campos",
+  "desc": "Gerente de Gestão Ambiental da Distribuição, Cemig",
+  "foto": "https://viex-americas.com/wp-content/uploads/Charles-Campos.jpg",
+  "link": "https://viex-americas.com/charles-campos/"
+ },
+ {
+  "nome": "Claudia Barros",
+  "desc": "Diretora de Licenciamento Ambiental, IBAMA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Claudia-Barros.jpg",
+  "link": "https://viex-americas.com/claudia-jeanne-da-silva-barros/"
+ },
+ {
+  "nome": "Cristiano Vilardo",
+  "desc": "Analista Ambiental, IBAMA",
+  "foto": "https://viex-americas.com/wp-content/uploads/cristiano-vilardo.jpg",
+  "link": "https://viex-americas.com/cristiano-vilardo/"
+ },
+ {
+  "nome": "Daniel Cavalcanti",
+  "desc": "Diretor Executivo, Dossel",
+  "foto": "https://viex-americas.com/wp-content/uploads/Design-sem-nome-61.jpg",
+  "link": "https://viex-americas.com/daniel-cavalcanti/"
+ },
+ {
+  "nome": "Daniel Placido",
+  "desc": "Coordenador Fundiário e GIS, Elera Renováveis",
+  "foto": "https://viex-americas.com/wp-content/uploads/Daniel.jpg",
+  "link": "https://viex-americas.com/daniel-placido/"
+ },
+ {
+  "nome": "Denise Regina Scherer",
+  "desc": "Gerente de Sustentabilidade e Meio Ambiente, Diamante Geração de Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Denise-Regina-Scherer.jpg",
+  "link": "https://viex-americas.com/denise-regina-scherer/"
+ },
+ {
+  "nome": "Édis Milaré",
+  "desc": "Fundador, Milaré Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Edis-Milare.jpg",
+  "link": "https://viex-americas.com/edis-milare/"
+ },
+ {
+  "nome": "Eduardo Callera Pedrosa",
+  "desc": "Assessor de Controle e Licenciamento Ambiental, Cetesb",
+  "foto": "https://viex-americas.com/wp-content/uploads/Eduardo-1-1.jpg",
+  "link": "https://viex-americas.com/eduardo-callera-pedrosa/"
+ },
+ {
+  "nome": "Eduardo Carvalho",
+  "desc": "Diretor, Geoprospec",
+  "foto": "https://viex-americas.com/wp-content/uploads/Eduardo-Carvalho-1.jpg",
+  "link": "https://viex-americas.com/eduardo-centeno-broll-carvalho/"
+ },
+ {
+  "nome": "Eduardo Morbeck",
+  "desc": "Diretor Comercial, Dossel Ambiental",
+  "foto": "https://viex-americas.com/wp-content/uploads/eduardo-morbeck-1.jpg",
+  "link": "https://viex-americas.com/eduardo-morbeck/"
+ },
+ {
+  "nome": "Elisângela Almeida",
+  "desc": "Superintendente de Meio Ambiente, EPE",
+  "foto": "https://viex-americas.com/wp-content/uploads/Elisangela-Almeida.jpg",
+  "link": "https://viex-americas.com/elisangela-almeida/"
+ },
+ {
+  "nome": "Emilio Roos",
+  "desc": "Managing Director, Bioinsight & Ecoa – BE",
+  "foto": "https://viex-americas.com/wp-content/uploads/Emilio-Roos.jpg",
+  "link": "https://viex-americas.com/emilio-roos/"
+ },
+ {
+  "nome": "Eric Lemos",
+  "desc": "Coordenador de Avaliação de Impacto ao Patrimônio Cultural, IPHAN",
+  "foto": "https://viex-americas.com/wp-content/uploads/Eric.jpg",
+  "link": "https://viex-americas.com/eric-lemos/"
+ },
+ {
+  "nome": "Fabiana Figueiró",
+  "desc": "Sócia, Souto Correa Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Fabiana-Figueiro.jpg",
+  "link": "https://viex-americas.com/fabiana-figueiro/"
+ },
+ {
+  "nome": "Felipe Echenique Alves",
+  "desc": "Gerente Fundiário, Comerc Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Felipe-Echenique-Alves.jpg",
+  "link": "https://viex-americas.com/felipe-echenique-alves/"
+ },
+ {
+  "nome": "Felipe Lavorato",
+  "desc": "Presidente, Ambientare",
+  "foto": "https://viex-americas.com/wp-content/uploads/felipe-lavorato.jpg",
+  "link": "https://viex-americas.com/felipe-lavorato/"
+ },
+ {
+  "nome": "Fernanda Cerqueira Santos",
+  "desc": "Analista de Gestão Ambiental, SPIC Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Fernanda-Cerqueira-Santos_.jpg",
+  "link": "https://viex-americas.com/fernanda-cerqueira-santos/"
+ },
+ {
+  "nome": "Flávia Pinto",
+  "desc": "Coordenadora de Licenciamento Ambiental e Responsabilidade Social, Rio Energy",
+  "foto": "https://viex-americas.com/wp-content/uploads/Flavia-Pinto-1.jpg",
+  "link": "https://viex-americas.com/flavia-pinto/"
+ },
+ {
+  "nome": "Flavia Siqueira",
+  "desc": "Gerente de Desenvolvimento Social, Light",
+  "foto": "https://viex-americas.com/wp-content/uploads/Flavia-Siqueira.jpg",
+  "link": "https://viex-americas.com/flavia-siqueira/"
+ },
+ {
+  "nome": "Flávio César",
+  "desc": "Arqueólogo, Sócio da CONSAM Meio Ambiente e Arqueologia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Flavio-1.jpg",
+  "link": "https://viex-americas.com/flavio-cesar/"
+ },
+ {
+  "nome": "Flávio Scapim",
+  "desc": "Diretor, Infracore Soluções",
+  "foto": "https://viex-americas.com/wp-content/uploads/Flavio-Scapim.jpg",
+  "link": "https://viex-americas.com/flavio-scapim/"
+ },
+ {
+  "nome": "Francisco Galvão",
+  "desc": "Vice-Presidente de Operações, Elera Renováveis",
+  "foto": "https://viex-americas.com/wp-content/uploads/Francisco-Galvao.jpg",
+  "link": "https://viex-americas.com/francisco-galvao/"
+ },
+ {
+  "nome": "Gabriel Postiglioni",
+  "desc": "Especialista em Geotecnologias e Soluções com Drones",
+  "foto": "https://viex-americas.com/wp-content/uploads/gabriel-p.jpg",
+  "link": "https://viex-americas.com/gabriel-postiglioni/"
+ },
+ {
+  "nome": "Gabriel Ritter",
+  "desc": "Diretor Técnico, FEPAM RS",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-gabriel-ritter-1.jpg",
+  "link": "https://viex-americas.com/gabriel-ritter/"
+ },
+ {
+  "nome": "Gessica Trevizan Pera",
+  "desc": "Especialista em Responsabilidade Social, SPIC Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Gessica-Trevizan-Pera.jpg",
+  "link": "https://viex-americas.com/gessica-trevizan-pera/"
+ },
+ {
+  "nome": "Gleyse Gulin",
+  "desc": "Diretora de Assuntos Ambientais, ABRAPCH",
+  "foto": "https://viex-americas.com/wp-content/uploads/Gleyse-Gulin.jpg",
+  "link": "https://viex-americas.com/gleyse-gulin/"
+ },
+ {
+  "nome": "Guilherme Bazan",
+  "desc": "Coordenador Fundiário, Eneva",
+  "foto": "https://viex-americas.com/wp-content/uploads/Guilherme-Bazan.jpg",
+  "link": "https://viex-americas.com/guilherme-bazan/"
+ },
+ {
+  "nome": "Guilherme Leal",
+  "desc": "Sócio de Ambiental e Mudanças Climáticas, Machado Meyer Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Guilherme-Leal-1.jpg",
+  "link": "https://viex-americas.com/guilherme-leal/"
+ },
+ {
+  "nome": "Guilherme Sari",
+  "desc": "Diretor Comercial, DGE Soluções Renováveis e Diretor de Eólicas, Sindienergia-RS",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Guilherme-.jpg",
+  "link": "https://viex-americas.com/guilherme-sari-2/"
+ },
+ {
+  "nome": "Gustavo Rodrigues",
+  "desc": "Assessor Executivo de Diretoria de TI, Relacionamento com Agentes e Assuntos Regulatórios, ONS",
+  "foto": "https://viex-americas.com/wp-content/uploads/Gustavo-Rodrigues.jpg",
+  "link": "https://viex-americas.com/gustavo-rodrigues/"
+ },
+ {
+  "nome": "Hatila Aquino",
+  "desc": "VP Assuntos Corporativos, Ascenty",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Hatila-Aquino-1.jpg",
+  "link": "https://viex-americas.com/hatila-aquino/"
+ },
+ {
+  "nome": "Hélène Plaisance",
+  "desc": "Diretora Jurídica, Eren Biogás Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Helene-Plaisance.jpg",
+  "link": "https://viex-americas.com/helene-plaisance/"
+ },
+ {
+  "nome": "Hugo Fernandes",
+  "desc": "Diretor de Inovação, Seteg",
+  "foto": "https://viex-americas.com/wp-content/uploads/Hugo-Fernandes.jpg",
+  "link": "https://viex-americas.com/hugo-fernandes/"
+ },
+ {
+  "nome": "Ingrid Rosa",
+  "desc": "Diretora Adjunta, INEA RJ",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ingrid-1.jpg",
+  "link": "https://viex-americas.com/ingrid-cavalcante/"
+ },
+ {
+  "nome": "Iris Zimmer",
+  "desc": "Sócia, Siqueira Castro Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Iris-Zimmer.jpg",
+  "link": "https://viex-americas.com/iris-zimmer/"
+ },
+ {
+  "nome": "Jader Fernandes",
+  "desc": "Diretor de Licenciamento Ambiental da Operação, AXIA Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-jader.jpg",
+  "link": "https://viex-americas.com/jader-fernandes/"
+ },
+ {
+  "nome": "Jainara Alves de Carvalho",
+  "desc": "Gerente Corporativa de Saúde & Segurança, Meio Ambiente e Qualidade, SPIC Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-jainara.jpg",
+  "link": "https://viex-americas.com/jainara-alves-de-carvalho/"
+ },
+ {
+  "nome": "Jarbas Amaro",
+  "desc": "Gerente de Sustentabilidade, Auren Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Jarbas-Amaro.jpg",
+  "link": "https://viex-americas.com/jarbas-amaro/"
+ },
+ {
+  "nome": "Jerônimo Campos",
+  "desc": "Secretário Adjunto de Licenciamento Ambiental e Recursos Hídricos, SEMA-MT",
+  "foto": "https://viex-americas.com/wp-content/uploads/speaker-male.png",
+  "link": "https://viex-americas.com/jeronimo-campos/"
+ },
+ {
+  "nome": "Jhenifer Aline Bastos",
+  "desc": "Consultora Sênior na área de Sustentabilidade e Mudanças Climáticas, EBP Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Jhenifer-Aline-Bastos.jpg",
+  "link": "https://viex-americas.com/jhenifer-aline-bastos/"
+ },
+ {
+  "nome": "João Gabriel Laprovítera Rocha",
+  "desc": "Superintendente, Superintendência Estadual do Meio Ambiente do Ceará",
+  "foto": "https://viex-americas.com/wp-content/uploads/Joao-.jpg",
+  "link": "https://viex-americas.com/joao-gabriel-laprovitera-rocha/"
+ },
+ {
+  "nome": "Josevan Carmo da Cruz Junior",
+  "desc": "Presidente, Instituto de Meio Ambiente de Santa Catarina",
+  "foto": "https://viex-americas.com/wp-content/uploads/Josevan-.jpg",
+  "link": "https://viex-americas.com/josevan-carmo-da-cruz-junior/"
+ },
+ {
+  "nome": "Juliana Inaoka",
+  "desc": "Superintendente de Sustentabilidade, OMNIA Data Centers",
+  "foto": "https://viex-americas.com/wp-content/uploads/Juliana.jpg",
+  "link": "https://viex-americas.com/juliana-inaoka/"
+ },
+ {
+  "nome": "Juliana Pretto",
+  "desc": "Advogada Sênior, Souto Corrêa Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/juliana-pretto.jpg",
+  "link": "https://viex-americas.com/juliana-pretto-2/"
+ },
+ {
+  "nome": "Karen Cristine Schröder",
+  "desc": "Gerente de Meio Ambiente, ENGIE Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Karen-Cristine-Schroder.jpg",
+  "link": "https://viex-americas.com/karen-cristine-schroder/"
+ },
+ {
+  "nome": "Karinne Pereira de Siqueira",
+  "desc": "Gerente Executiva de Licenciamento Ambiental e Gestão de Condicionantes de Geração, AXIA Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Karinne-Pereira-de-Siqueira.jpg",
+  "link": "https://viex-americas.com/karinne-siqueira/"
+ },
+ {
+  "nome": "Leandro Bacic Fernandes",
+  "desc": "Head de Tecnologia, BIP Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/leonardo-bip.jpg",
+  "link": "https://viex-americas.com/leandro-bacic-fernandes/"
+ },
+ {
+  "nome": "Leonardo Teixeira",
+  "desc": "Analista Ambiental, IBAMA",
+  "foto": "https://viex-americas.com/wp-content/uploads/leonardo-teixeira.jpg",
+  "link": "https://viex-americas.com/leonardo-teixeira/"
+ },
+ {
+  "nome": "Lilian Santos",
+  "desc": "Secretária Adjunta de Licenciamento Ambiental e Recursos Hídricos de Mato Grosso",
+  "foto": "https://viex-americas.com/wp-content/uploads/Lilian-Santos.jpg",
+  "link": "https://viex-americas.com/lilian-santos/"
+ },
+ {
+  "nome": "Liu Aquino",
+  "desc": "Diretor-Presidente, Echoenergia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-liu-aquino-.jpg",
+  "link": "https://viex-americas.com/liu-aquino/"
+ },
+ {
+  "nome": "Liv Nakashima",
+  "desc": "Diretora de Gestão Corporativa, CETESB",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Liv-Nakashima.jpg",
+  "link": "https://viex-americas.com/liv-nakashima/"
+ },
+ {
+  "nome": "Lívia Tavares Ornellas",
+  "desc": "Coordenadora de Meio Ambiente, Acelen Renováveis",
+  "foto": "https://viex-americas.com/wp-content/uploads/Livia-Tavares-Ornellas.jpg",
+  "link": "https://viex-americas.com/livia-tavares-ornellas/"
+ },
+ {
+  "nome": "Lucas Milaré",
+  "desc": "Advogado e Sócio, Milaré Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Lucas-2.jpg",
+  "link": "https://viex-americas.com/lucas-milare/"
+ },
+ {
+  "nome": "Luciana Gil",
+  "desc": "Sócia Conselheira da Área Ambiental e Mudanças Climáticas, Bichara Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Luciana.jpg",
+  "link": "https://viex-americas.com/luciana-gil/"
+ },
+ {
+  "nome": "Lucio Vicente",
+  "desc": "Diretor Geral, Instituto Akatu",
+  "foto": "https://viex-americas.com/wp-content/uploads/Lucio-Vicente.jpg",
+  "link": "https://viex-americas.com/lucio-vicente/"
+ },
+ {
+  "nome": "Ludimila Lima da Silva",
+  "desc": "Diretora Substituta, ANEEL",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Ludimila.jpg",
+  "link": "https://viex-americas.com/ludimila-lima-da-silva/"
+ },
+ {
+  "nome": "Ludmila Nascimento",
+  "desc": "Diretoria de Planejamento e ESG, Norte Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ludmila-Nascimento.jpg",
+  "link": "https://viex-americas.com/ludmila-nascimento/"
+ },
+ {
+  "nome": "Luis Tossi",
+  "desc": "Vice-Presidente, ABDC – Associação Brasileira de Data Center e Diretor Comercial, Edgefy Datacenters",
+  "foto": "https://viex-americas.com/wp-content/uploads/luis-tossi-.jpg",
+  "link": "https://viex-americas.com/luis-tossi/"
+ },
+ {
+  "nome": "Luisa Tischer Nastari",
+  "desc": "Superintendente de Sustentabilidade, Copel",
+  "foto": "https://viex-americas.com/wp-content/uploads/Luisa-Tischer-Nastari.jpg",
+  "link": "https://viex-americas.com/luisa-tischer-nastari/"
+ },
+ {
+  "nome": "Luiz Felipe Portela",
+  "desc": "Director of Business Development, Omnia Data Centers",
+  "foto": "https://viex-americas.com/wp-content/uploads/Luiz-Felipe-Portela.jpg",
+  "link": "https://viex-americas.com/luiz-felipe-portela/"
+ },
+ {
+  "nome": "Maíra Fonseca da Cunha",
+  "desc": "Assessora Técnica da Presidência, CETESB",
+  "foto": "https://viex-americas.com/wp-content/uploads/Maira-Fonseca-da-Cunha.jpg",
+  "link": "https://viex-americas.com/maira-fonseca-da-cunha/"
+ },
+ {
+  "nome": "Mara Ledo",
+  "desc": "Diretora, Casa Anísio Teixeira",
+  "foto": "https://viex-americas.com/wp-content/uploads/Mara-Ledo-.jpg",
+  "link": "https://viex-americas.com/mara-ledo/"
+ },
+ {
+  "nome": "Marcio Douglas Araújo",
+  "desc": "Superintendente de RH, Comunicação e Administrativo, Renova Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/marcio-douglas.jpg",
+  "link": "https://viex-americas.com/marcio-douglas-araujo/"
+ },
+ {
+  "nome": "Marco Brancato",
+  "desc": "Gerente de Operações e Implantação do Setor de Energia, EnvironPact",
+  "foto": "https://viex-americas.com/wp-content/uploads/Engenheiro-florestal-formado-pela-UFRRJ-possui-37-anos-de-atuacao-profissional-com-especializacao-em-Gestao-de-Impactos-Ambientais-e-Administracao-de-Empresas.-Iniciou-sua-experiencia-profission.jpg",
+  "link": "https://viex-americas.com/marco-brancato/"
+ },
+ {
+  "nome": "Marcos Lima",
+  "desc": "Especialista em IA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Marcos-Lima-1.jpg",
+  "link": "https://viex-americas.com/marcos-lima/"
+ },
+ {
+  "nome": "Marcos Vilela",
+  "desc": "Diretor Executivo, Ambientare Geotech",
+  "foto": "https://viex-americas.com/wp-content/uploads/marcos-vilela.jpg",
+  "link": "https://viex-americas.com/marcos-vilela/"
+ },
+ {
+  "nome": "Marcos Vinicius Santos",
+  "desc": "Especialista em Meio Ambiente e Sustentabilidade e Perito Ambiental, Alupar",
+  "foto": "https://viex-americas.com/wp-content/uploads/Marcos-Vinicius-Santos.jpg",
+  "link": "https://viex-americas.com/marcos-vinicius-santos/"
+ },
+ {
+  "nome": "Mariana Aragão",
+  "desc": "Analista Socioambiental, CSA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Mariana-Aragao.jpg",
+  "link": "https://viex-americas.com/mariana-aragao/"
+ },
+ {
+  "nome": "Mariana Schaedler",
+  "desc": "Health, Safety, Security, Environmental and Quality Director, Arxen",
+  "foto": "https://viex-americas.com/wp-content/uploads/Mariana-Schaedler.jpg",
+  "link": "https://viex-americas.com/mariana-schaedler/"
+ },
+ {
+  "nome": "Mark Bermanzon",
+  "desc": "Gestor de Projetos de Inovação, TAESA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Mark-Bermanzon.jpg",
+  "link": "https://viex-americas.com/mark-bermanzon/"
+ },
+ {
+  "nome": "Matheus Haddad",
+  "desc": "Sócio, SETEG",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Matheus-Haddad.jpg",
+  "link": "https://viex-americas.com/matheus-haddad/"
+ },
+ {
+  "nome": "Mauricio Dall’Agnese",
+  "desc": "Vice-Presidente de Inovação, TAESA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Mauricio-DallAgnese.jpg",
+  "link": "https://viex-americas.com/mauricio-dallagnese/"
+ },
+ {
+  "nome": "Mauricio Salles",
+  "desc": "Director of InnovaPower Hub, USP",
+  "foto": "https://viex-americas.com/wp-content/uploads/Mauricio-Salles-.jpg",
+  "link": "https://viex-americas.com/mauricio-salles/"
+ },
+ {
+  "nome": "Mouana Sioufi",
+  "desc": "Gerente Sênior de Relações Institucionais e Comunidades, SPIC Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Mouana-Sioufi.jpg",
+  "link": "https://viex-americas.com/mouana-sioufi/"
+ },
+ {
+  "nome": "Ney Maron",
+  "desc": "Diretor, Maron Ambiental",
+  "foto": "https://viex-americas.com/wp-content/uploads/ney-maron-1.jpg",
+  "link": "https://viex-americas.com/ney-maron/"
+ },
+ {
+  "nome": "Otávio Nunes",
+  "desc": "Analista de Mudanças Climáticas, ENGIE",
+  "foto": "https://viex-americas.com/wp-content/uploads/Otavio-Nunes.jpg",
+  "link": "https://viex-americas.com/otavio-nunes/"
+ },
+ {
+  "nome": "Patrícia Mendanha Dias",
+  "desc": "Sócia Conselheira da Área Ambiental, ESG e Mudanças Climáticas, Bichara Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/patricia-mendanha.jpg",
+  "link": "https://viex-americas.com/patricia-mendanha-dias/"
+ },
+ {
+  "nome": "Paula Susanna Amaral Mello",
+  "desc": "Sócia, Pinheiro Neto Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Paula-Susanna-Amaral-Mello.jpg",
+  "link": "https://viex-americas.com/paula-susanna-amaral-mello/"
+ },
+ {
+  "nome": "Pedro Dias",
+  "desc": "Diretor Executivo, Cia Ambiental",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-12.jpg",
+  "link": "https://viex-americas.com/pedro-dias/"
+ },
+ {
+  "nome": "Pedro Dittrich",
+  "desc": "Diretor de Regulação e Assuntos Legislativos, Casa dos Ventos Energias Renováveis",
+  "foto": "https://viex-americas.com/wp-content/uploads/pedro-ditrich.jpg",
+  "link": "https://viex-americas.com/pedro-dittrich/"
+ },
+ {
+  "nome": "Peterson Sousa",
+  "desc": "Coordenador de Planejamento e Inovação, CRN Veritas",
+  "foto": "https://viex-americas.com/wp-content/uploads/Peterson-Sousa.jpg",
+  "link": "https://viex-americas.com/peterson-sousa/"
+ },
+ {
+  "nome": "Philipe Moura",
+  "desc": "Diretor de Estratégia e Vendas, Eurasia Group",
+  "foto": "https://viex-americas.com/wp-content/uploads/Design-sem-nome-60.jpg",
+  "link": "https://viex-americas.com/philipe-moura/"
+ },
+ {
+  "nome": "Priscila Artigas",
+  "desc": "Sócia-Fundadora, Artigas Advocacia Ambiental",
+  "foto": "https://viex-americas.com/wp-content/uploads/priscila-artigas.jpg",
+  "link": "https://viex-americas.com/priscila-artigas/"
+ },
+ {
+  "nome": "Rafael Eugênio",
+  "desc": "Gerente Fundiário, Casa dos Ventos",
+  "foto": "https://viex-americas.com/wp-content/uploads/Rafael-Eugenio.jpg",
+  "link": "https://viex-americas.com/rafael-eugenio/"
+ },
+ {
+  "nome": "Ramires de Oliveira Santana",
+  "desc": "Gerente de Licenciamento, Âmbar Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ramires-de-Oliveira-Santana-1.jpg",
+  "link": "https://viex-americas.com/ramires-de-oliveira-santana/"
+ },
+ {
+  "nome": "Raquel Medeiros",
+  "desc": "Diretora de Operações, Ambientare",
+  "foto": "https://viex-americas.com/wp-content/uploads/Raquel-Medeiros.jpg",
+  "link": "https://viex-americas.com/raquel-medeiros/"
+ },
+ {
+  "nome": "Renata Libânio",
+  "desc": "Diretora de Operações e Consultoria, IUS",
+  "foto": "https://viex-americas.com/wp-content/uploads/Renata-Libanio-e-advogada-e-licenciada-em-Ciencias-Biologicas-pela-UFMG-especialista-em-Direito-Ambiental-pelo-IETEC-e-atualmente-cursando-o-MBA-em-ESG-e-Negocios-Sustentaveis-pela-USPESALQ.-E-a-1.jpg",
+  "link": "https://viex-americas.com/renata-cassimiro-libanio/"
+ },
+ {
+  "nome": "Renato Chagas",
+  "desc": "Diretor-Presidente, FEPAM RS",
+  "foto": "https://viex-americas.com/wp-content/uploads/renato-chagas.jpg",
+  "link": "https://viex-americas.com/renato-chagas/"
+ },
+ {
+  "nome": "Ricardo Félix",
+  "desc": "Diretor de Saúde e Segurança, Meio Ambiente, Fundiário e ESG, State Grid",
+  "foto": "https://viex-americas.com/wp-content/uploads/palestrante-Ricardo-Felix.jpg",
+  "link": "https://viex-americas.com/ricardo-felix/"
+ },
+ {
+  "nome": "Roberta Danelon Leonhardt",
+  "desc": "Sócia das Áreas Ambiental e de Gestão de Crises, Machado Meyer Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Roberta.jpg",
+  "link": "https://viex-americas.com/roberta-danelon-leonhardt/"
+ },
+ {
+  "nome": "Roberto Stanchi",
+  "desc": "Diretor de Licenciamento Ambiental de Obras Públicas, CETESB",
+  "foto": "https://viex-americas.com/wp-content/uploads/Roberto.jpg",
+  "link": "https://viex-americas.com/roberto-stanchi/"
+ },
+ {
+  "nome": "Robson Hitoshi Tanaka",
+  "desc": "Gerente de Meio Ambiente e Licenciamento, CPFL Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Robson-Hitoshi-Tanaka.jpg",
+  "link": "https://viex-americas.com/robson-hitoshi-tanaka/"
+ },
+ {
+  "nome": "Rodrigo Eidy",
+  "desc": "Presidente, Litro de Luz",
+  "foto": "https://viex-americas.com/wp-content/uploads/Rodrigo-Eidy.jpeg",
+  "link": "https://viex-americas.com/rodrigo-eidy/"
+ },
+ {
+  "nome": "Rodrigo Sucesso",
+  "desc": "Sócio-Diretor, VIEX",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Rodrigo-Sucesso.jpg",
+  "link": "https://viex-americas.com/rodrigo-sucesso/"
+ },
+ {
+  "nome": "Ronan Max Prochnow",
+  "desc": "Gerente de ESG e Sustentabilidade, CTG Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Ronan-Max-Prochnow.jpg",
+  "link": "https://viex-americas.com/ronan-max-prochnow/"
+ },
+ {
+  "nome": "Sandro Yamamoto",
+  "desc": "Diretor de Novos Negócios, Regulação e Relações Institucionais, Renova Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/sandro-yamamoto.jpg",
+  "link": "https://viex-americas.com/sandro-yamamoto/"
+ },
+ {
+  "nome": "Scheila Macedo",
+  "desc": "Gerente de Sustentabilidade e ASG, Renova Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Scheila-Macedo.jpg",
+  "link": "https://viex-americas.com/scheila-macedo/"
+ },
+ {
+  "nome": "Sérgio Iani",
+  "desc": "Diretor Executivo de Desenvolvimento de Negócios, CRN Veritas",
+  "foto": "https://viex-americas.com/wp-content/uploads/Sergio-Iani.jpg",
+  "link": "https://viex-americas.com/sergio-iani/"
+ },
+ {
+  "nome": "Sergio Jacobsen",
+  "desc": "CEO, Micropower Energia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Sergio-Jacobsen.jpg",
+  "link": "https://viex-americas.com/sergio-jacobsen-2/"
+ },
+ {
+  "nome": "Simone Nogueira",
+  "desc": "Sócia, Siqueira Castro Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Simone.jpg",
+  "link": "https://viex-americas.com/simone-nogueira/"
+ },
+ {
+  "nome": "Solange Leite",
+  "desc": "Consultora, Maron Ambiental",
+  "foto": "https://viex-americas.com/wp-content/uploads/Solange-Leite.jpg",
+  "link": "https://viex-americas.com/solange-leite/"
+ },
+ {
+  "nome": "Talden Farias",
+  "desc": "Advogado e professor de Direito Ambiental e Urbanístico",
+  "foto": "https://viex-americas.com/wp-content/uploads/Talden-Farias.jpg",
+  "link": "https://viex-americas.com/talden-farias/"
+ },
+ {
+  "nome": "Tatiana Ricota",
+  "desc": "Diretora de Sustentabilidade, Elera Renováveis",
+  "foto": "https://viex-americas.com/wp-content/uploads/Palestrante-Tatiana-Marques-1.jpg",
+  "link": "https://viex-americas.com/tatiana-ricota/"
+ },
+ {
+  "nome": "Thais Ferraz Soares",
+  "desc": "Vice-Presidente de Sustentabilidade, ENGIE Brasil",
+  "foto": "https://viex-americas.com/wp-content/uploads/Thais-Ferraz-Soares.jpg",
+  "link": "https://viex-americas.com/thais-ferraz-soares/"
+ },
+ {
+  "nome": "Thaynara Nunes",
+  "desc": "Supervisora ambiental, CRN Veritas",
+  "foto": "https://viex-americas.com/wp-content/uploads/Thaynara-Nunes.jpg",
+  "link": "https://viex-americas.com/thaynara-nunes/"
+ },
+ {
+  "nome": "Thiago César Farias da Silva",
+  "desc": "Gerente Executivo de Áreas Protegidas, Biodiversidade e Gestão Costeira, SEMAS PB",
+  "foto": "https://viex-americas.com/wp-content/uploads/speaker-male.png",
+  "link": "https://viex-americas.com/thiago-cesar-farias-da-silva/"
+ },
+ {
+  "nome": "Thiago Suaid",
+  "desc": "Sócio Head da área de Direito Ambiental, Mosello Advocacia",
+  "foto": "https://viex-americas.com/wp-content/uploads/Thiago-Suaid-1.jpg",
+  "link": "https://viex-americas.com/thiago-suaid/"
+ },
+ {
+  "nome": "Thomaz Toledo",
+  "desc": "Presidente, CETESB e Diretor, ABEMA",
+  "foto": "https://viex-americas.com/wp-content/uploads/Thomaz-Toledo-1.jpg",
+  "link": "https://viex-americas.com/thomaz-toledo/"
+ },
+ {
+  "nome": "Tuliana Brunes",
+  "desc": "Especialista em Fauna Sênior, Ambientare",
+  "foto": "https://viex-americas.com/wp-content/uploads/Tuliana.jpg",
+  "link": "https://viex-americas.com/tuliana-brunes/"
+ },
+ {
+  "nome": "Unai Martínez Sáez de Jáuregui",
+  "desc": "Business Developer Manager Iberia & Latam, Bioseco",
+  "foto": "https://viex-americas.com/wp-content/uploads/Unai-Martinez-Saez-de-Jauregui-.jpg",
+  "link": "https://viex-americas.com/unai-martinez-saez-de-jauregui/"
+ },
+ {
+  "nome": "Vanessa Hermida Fidalgo",
+  "desc": "Gerente do Departamento de Desenvolvimento de Ações Estratégicas e Licenciamento, CETESB",
+  "foto": "https://viex-americas.com/wp-content/uploads/Vanessa-Hermida-Fidalgo-1.jpg",
+  "link": "https://viex-americas.com/vanessa-hermida-fidalgo/"
+ },
+ {
+  "nome": "Verena Van Der Ven",
+  "desc": "Gerente de E&S, Scatec",
+  "foto": "https://viex-americas.com/wp-content/uploads/Verena-Van-Der-Ven.jpg",
+  "link": "https://viex-americas.com/verena-van-der-ven/"
+ },
+ {
+  "nome": "Vinicius Rissoli",
+  "desc": "CEO, SCCON Geospatial",
+  "foto": "https://viex-americas.com/wp-content/uploads/Vinicius.jpg",
+  "link": "https://viex-americas.com/vinicius-rissoli/"
+ },
+ {
+  "nome": "Walleska Alves de Aquino",
+  "desc": "Coordenador de Projetos, Ambientare",
+  "foto": "https://viex-americas.com/wp-content/uploads/Walleska-Alves-de-Aquino-Ferreira.jpg",
+  "link": "https://viex-americas.com/walleska-alves-de-aquino/"
+ },
+ {
+  "nome": "Walter Senise",
+  "desc": "Sócio-Fundador, Senise Paiva Bastos Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/Walter-Senise-1.jpg",
+  "link": "https://viex-americas.com/walter-senise/"
+ },
+ {
+  "nome": "Werner Grau",
+  "desc": "Sócio, Pinheiro Neto Advogados",
+  "foto": "https://viex-americas.com/wp-content/uploads/werner-grau.jpg",
+  "link": "https://viex-americas.com/werner-grau/"
+ },
+ {
+  "nome": "Wilson Domingues",
+  "desc": "Coordenador de Meio Ambiente, Alupar",
+  "foto": "https://viex-americas.com/wp-content/uploads/Wilson-Domingues.jpg",
+  "link": "https://viex-americas.com/wilson-domingues/"
+ }
+]
