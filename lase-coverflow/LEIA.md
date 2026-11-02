@@ -7,8 +7,8 @@ https://viex-americas.com/eventos/lase/lase-2026/
 - `palestrantes.json` — retrato dos 137 palestrantes lidos da página em 2026-11-02 (só referência).
 
 Ele lê, na própria página, o módulo de Posts "Palestrantes confirmados"
-(título = nome, resumo = cargo e empresa, imagem destacada = foto) e esconde
-o grid original no site publicado. Incluir/tirar palestrante = mexer na query
+(título = nome, resumo = cargo e empresa, imagem destacada = foto). O grid
+original continua visível (data-ocultar-fonte="nao"). Incluir/tirar palestrante = mexer na query
 daquele módulo; o cover flow acompanha sozinho.
 
 Cores: neon `#53DFD1`, fundo `#2F4442` (marca LASE 2026).
