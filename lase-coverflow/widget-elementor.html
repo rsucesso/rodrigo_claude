@@ -12,10 +12,11 @@
                                  o que tem posts da categoria "palestrantes")
     data-ocultar-fonte="nao"     "sim" esconde o grid original no site publicado
                                  (no editor do Elementor ele continua visível)
-    data-autoplay="0"            segundos entre trocas automáticas (0 = desligado)
+    data-autoplay="3"            segundos entre trocas automáticas (0 = desligado);
+                                 pausa com o mouse em cima ou enquanto a pessoa navega
     data-abrir-perfil="sim"      clicar na capa central abre o perfil
 ============================================================ -->
-<div class="lase-cf" data-fonte="" data-ocultar-fonte="nao" data-autoplay="0" data-abrir-perfil="sim"
+<div class="lase-cf" data-fonte="" data-ocultar-fonte="nao" data-autoplay="3" data-abrir-perfil="sim"
      role="region" aria-roledescription="carrossel" aria-label="Palestrantes do LASE 2026">
   <div class="lase-cf__stage" tabindex="0" aria-label="Use as setas para navegar">
     <div class="lase-cf__floor"></div>
@@ -38,7 +39,7 @@
   --neon:#53DFD1; --neon-soft:rgba(83,223,209,.35); --txt:#f2f7f6; --txt2:#bff4ee;
   --w:200px; --h:267px;
   position:relative; overflow:hidden; box-sizing:border-box; width:100%;
-  padding:28px 0 22px; border-radius:14px; color:var(--txt); font-family:inherit;
+  padding:28px 0 22px; border-radius:0; color:var(--txt); font-family:inherit;
   background:radial-gradient(ellipse 80% 70% at 50% 32%,#2F4442 0%,#132120 52%,#060a0a 100%);
   -webkit-user-select:none; user-select:none;
 }
@@ -52,7 +53,7 @@
   box-shadow:0 0 14px 2px var(--neon-soft),0 0 40px 6px rgba(83,223,209,.15); opacity:.75}
 .lase-cf__item{position:absolute; left:50%; top:18px; width:var(--w); margin-left:calc(var(--w)/-2);
   transform-style:preserve-3d; will-change:transform; display:none}
-.lase-cf__cover{position:relative; width:var(--w); height:var(--h); overflow:hidden; border-radius:3px;
+.lase-cf__cover{position:relative; width:var(--w); height:var(--h); overflow:hidden; border-radius:0;
   background:#1d2c2b; box-shadow:0 10px 30px rgba(0,0,0,.55)}
 .lase-cf__cover img,.lase-cf__refl img{display:block; width:100%; height:100%; object-fit:cover; object-position:50% 20%;
   pointer-events:none; -webkit-user-drag:none}
@@ -178,9 +179,11 @@
       root.style.setProperty('--h',Math.round(W*4/3)+'px');
     }
 
+    function md(x){ return ((x%N)+N)%N; }
+    function volta(d){ return md(d+N/2)-N/2; }  // distância mais curta no círculo
     function render(){
       for(var i=0;i<N;i++){
-        var d=i-pos, a=Math.abs(d), el=itens[i].el;
+        var d=volta(i-pos), a=Math.abs(d), el=itens[i].el;
         if(a>VIS+0.5){ if(el.style.display!=='none') el.style.display='none'; continue; }
         if(a<VIS+2) carregar(i);
         var s=d<0?-1:1, t=Math.min(a,1);
@@ -192,7 +195,7 @@
         el.style.opacity=a>VIS-1?Math.max(0,VIS+0.5-a)/1.5:1;
         el.classList.toggle('is-center',a<0.5);
       }
-      var c=Math.max(0,Math.min(N-1,Math.round(pos)));
+      var c=md(Math.round(pos));
       if(c!==atual){ atual=c; mostrarTexto(c); }
     }
     var tFade=0;
@@ -210,7 +213,7 @@
       pos+=dif*0.16; render(); raf=requestAnimationFrame(loop);
     }
     function irPara(i){
-      alvo=Math.max(0,Math.min(N-1,i));
+      alvo=i;
       if(!raf) raf=requestAnimationFrame(loop);
       reiniciarAuto();
     }
@@ -226,7 +229,7 @@
       if(!arrastando||e.pointerId!==idPtr) return;
       var dx=e.clientX-x0;
       if(!moveu && Math.abs(dx)>6){ moveu=true; try{stage.setPointerCapture(idPtr);}catch(_){} }
-      if(moveu){ pos=Math.max(-0.4,Math.min(N-0.6,p0-dx/(W*0.42))); alvo=pos; render(); }
+      if(moveu){ pos=p0-dx/(W*0.42); alvo=pos; render(); }
     });
     function soltar(e){
       if(!arrastando) return; arrastando=false;
@@ -234,9 +237,9 @@
       var it=e.target.closest&&e.target.closest('.lase-cf__item');
       if(!it){ irPara(Math.round(pos)); return; }
       var i=+it.getAttribute('data-i');
-      if(i===atual && Math.abs(pos-i)<0.3){
+      if(i===atual && Math.abs(volta(i-pos))<0.3){
         if(root.getAttribute('data-abrir-perfil')!=='nao' && dados[i].link) window.location.href=dados[i].link;
-      } else irPara(i);
+      } else irPara(Math.round(pos)+Math.round(volta(i-pos)));
     }
     stage.addEventListener('pointerup',soltar);
     stage.addEventListener('pointercancel',function(){ if(arrastando){arrastando=false; irPara(Math.round(pos));} });
@@ -254,22 +257,27 @@
       var k=e.key;
       if(k==='ArrowRight'){irPara(Math.round(alvo)+1); e.preventDefault();}
       else if(k==='ArrowLeft'){irPara(Math.round(alvo)-1); e.preventDefault();}
-      else if(k==='Home'){irPara(0); e.preventDefault();}
-      else if(k==='End'){irPara(N-1); e.preventDefault();}
+      else if(k==='Home'){irPara(Math.round(alvo)-md(Math.round(alvo))); e.preventDefault();}
+      else if(k==='End'){irPara(Math.round(alvo)-md(Math.round(alvo))+N-1); e.preventDefault();}
       else if(k==='Enter' && dados[atual].link && root.getAttribute('data-abrir-perfil')!=='nao'){ window.location.href=dados[atual].link; }
     });
 
     root.querySelectorAll('.lase-cf__btn').forEach(function(b){
       b.addEventListener('click',function(){ irPara(Math.round(alvo)+(+b.getAttribute('data-dir'))); });
     });
-    range.addEventListener('input',function(){ irPara(+range.value); });
+    range.addEventListener('input',function(){ var r=Math.round(alvo); irPara(r+Math.round(volta(+range.value-r))); });
 
     // troca automática opcional
-    var seg=parseFloat(root.getAttribute('data-autoplay'))||0, tAuto=0;
+    var seg=parseFloat(root.getAttribute('data-autoplay'))||0, tAuto=0, emCima=false;
     function reiniciarAuto(){
       if(!seg) return; clearInterval(tAuto);
-      tAuto=setInterval(function(){ irPara(Math.round(alvo)+1>=N?0:Math.round(alvo)+1); },seg*1000);
+      tAuto=setInterval(function(){
+        if(emCima||arrastando||document.hidden) return;
+        alvo=Math.round(alvo)+1; if(!raf) raf=requestAnimationFrame(loop);
+      },seg*1000);
     }
+    root.addEventListener('pointerenter',function(e){ if(e.pointerType==='mouse') emCima=true; });
+    root.addEventListener('pointerleave',function(e){ if(e.pointerType==='mouse'){ emCima=false; reiniciarAuto(); } });
 
     medir(); render(); reiniciarAuto();
     var tRes=0;
