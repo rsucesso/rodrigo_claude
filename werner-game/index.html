@@ -30,17 +30,23 @@ body{font-family:var(--body);color:var(--paper)}
 #game{display:block;box-shadow:0 0 0 3px var(--ink),0 10px 40px rgba(0,0,0,.6);background:#000}
 #ctl{position:fixed;inset:0;pointer-events:none;z-index:5}
 #stickZone{position:absolute;left:0;bottom:0;width:46%;height:72%;pointer-events:auto;touch-action:none}
-#stickBase{position:absolute;width:118px;height:118px;margin:-59px 0 0 -59px;border-radius:50%;background:rgba(255,246,224,.12);border:3px solid rgba(255,246,224,.35);left:calc(86px + env(safe-area-inset-left,0px));top:calc(100% - 88px - env(safe-area-inset-bottom,0px))}
-#stickKnob{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:rgba(255,210,63,.85);border:3px solid var(--ink);box-shadow:0 3px 0 rgba(0,0,0,.4)}
+#stickBase{position:absolute;width:128px;height:128px;margin:-64px 0 0 -64px;left:calc(90px + env(safe-area-inset-left,0px));top:calc(100% - 92px - env(safe-area-inset-bottom,0px));opacity:.88}
+/* Arcade stick: octagonal metal plate with screws, round gate, steel shaft and red ball-top */
+#stickBase::before,#stickBase::after{content:"";position:absolute;clip-path:polygon(29% 0,71% 0,100% 29%,100% 71%,71% 100%,29% 100%,0 71%,0 29%)}
+#stickBase::before{inset:0;background:var(--ink)}
+#stickBase::after{inset:4px;background:radial-gradient(circle at 18% 50%,#9a9aa6 0 3px,transparent 4px),radial-gradient(circle at 82% 50%,#9a9aa6 0 3px,transparent 4px),radial-gradient(circle at 50% 16%,#9a9aa6 0 3px,transparent 4px),radial-gradient(circle at 50% 84%,#9a9aa6 0 3px,transparent 4px),linear-gradient(160deg,#4a4a56,#24242c 60%,#1a1a20)}
+#stickGate{position:absolute;left:50%;top:50%;width:78px;height:78px;margin:-39px 0 0 -39px;border-radius:50%;background:radial-gradient(circle,#0b0b0f 0 45%,#16161c 70%,#24242c);box-shadow:inset 0 3px 6px rgba(0,0,0,.8),0 0 0 4px #2f6fe0;z-index:1}
+#stickShaft{position:absolute;left:50%;top:50%;width:12px;height:0;margin-left:-6px;transform-origin:50% 0;border-radius:6px;background:linear-gradient(90deg,#6d6d78,#e9e9f0 45%,#8a8a96);border:2px solid var(--ink);box-sizing:border-box;z-index:2}
+#stickKnob{position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:radial-gradient(circle at 34% 28%,#fff 0 5%,#8c95a8 11%,#2a2d36 34%,#111216 70%,#000);border:3px solid var(--ink);box-shadow:0 5px 0 rgba(0,0,0,.45),0 0 0 2px rgba(64,128,255,.55);z-index:3}
 #btns{position:absolute;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));width:210px;height:180px;pointer-events:none}
-.btn{position:absolute;pointer-events:auto;opacity:.82;touch-action:none;border-radius:50%;border:3px solid var(--ink);font-family:var(--display);letter-spacing:.04em;color:var(--ink);box-shadow:0 4px 0 rgba(0,0,0,.45);padding:0;cursor:pointer}
-.btn:active,.btn.on{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.45);filter:brightness(1.15)}
+.btn{position:absolute;pointer-events:auto;opacity:.82;touch-action:none;border-radius:50%;border:3px solid var(--ink);font-family:var(--display);letter-spacing:.04em;color:var(--ink);box-shadow:0 0 0 4px #2f6fe0,0 4px 0 4px rgba(0,0,0,.45);padding:0;cursor:pointer}
+.btn:active,.btn.on{transform:translateY(3px);box-shadow:0 0 0 4px #2f6fe0,0 1px 0 4px rgba(0,0,0,.45);filter:brightness(1.15)}
 .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
 #bA{right:0;bottom:8px;width:92px;height:92px;background:var(--hot);font-size:22px}
 #bB{right:100px;bottom:0;width:72px;height:72px;background:#5ec8f2;font-size:18px}
 #bC{right:62px;bottom:104px;width:66px;height:66px;background:var(--leaf);font-size:18px;color:var(--paper);text-shadow:0 2px 0 var(--ink)}
 #bC.ready{animation:pulse .8s infinite alternate}
-@keyframes pulse{to{box-shadow:0 0 0 6px rgba(255,210,63,.7),0 4px 0 rgba(0,0,0,.45)}}
+@keyframes pulse{to{box-shadow:0 0 0 4px #2f6fe0,0 0 0 9px rgba(255,210,63,.7),0 4px 0 4px rgba(0,0,0,.45)}}
 #top{position:fixed;top:calc(6px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:6}
 #top button{width:40px;height:34px;border-radius:9px;border:2px solid var(--ink);background:rgba(255,246,224,.85);color:var(--ink);font:900 15px var(--body);cursor:pointer;padding:0}
 #top button:focus-visible{outline:3px solid var(--sun)}
@@ -57,7 +63,7 @@ body{font-family:var(--body);color:var(--paper)}
 <div id="wrap"><canvas id="game" width="640" height="360" aria-label="Jogo Werner: Fúria Verde"></canvas></div>
 
 <div id="ctl" hidden>
-  <div id="stickZone"><div id="stickBase"><div id="stickKnob"></div></div></div>
+  <div id="stickZone"><div id="stickBase"><div id="stickGate"></div><div id="stickShaft"></div><div id="stickKnob"></div></div></div>
   <div id="btns">
     <button id="bC" class="btn" aria-label="Golpe especial da Lei">LEI</button>
     <button id="bB" class="btn" aria-label="Pular">PULO</button>
@@ -356,12 +362,29 @@ document.addEventListener('gesturestart',e=>e.preventDefault());
 document.addEventListener('contextmenu',e=>e.preventDefault());
 
 const ctlEl=document.getElementById('ctl');
-const zone=document.getElementById('stickZone'),base=document.getElementById('stickBase'),knob=document.getElementById('stickKnob');
+
+/* Physical arcade stick / gamepad (USB or Bluetooth, standard mapping).
+   Bottom row X/A and top row Square/X punch; Circle/B and Triangle/Y jump; bumpers and triggers fire LEI; START pauses or starts. */
+const GP_BTN={0:'a',2:'a',1:'b',3:'b',4:'c',5:'c',6:'c',7:'c',12:'up',13:'down',14:'left',15:'right'};
+const gpPrev={};let gpDirs={left:false,right:false,up:false,down:false};
+function pollPads(){
+  const pads=navigator.getGamepads?navigator.getGamepads():[];const now={};let ax=0,ay=0;
+  for(const p of pads){if(!p)continue;
+    p.buttons.forEach((b,i)=>{if(b&&(b.pressed||b.value>.5)){const k=GP_BTN[i];if(k)now[k]=true;if(i===9||i===8)now.start=true;}});
+    if(Math.abs(p.axes[0]||0)>Math.abs(ax))ax=p.axes[0];if(Math.abs(p.axes[1]||0)>Math.abs(ay))ay=p.axes[1];}
+  if(ax<-.5)now.left=true;if(ax>.5)now.right=true;if(ay<-.5)now.up=true;if(ay>.5)now.down=true;
+  for(const k of ['a','b','c','left','right','up','down']){
+    if(now[k]&&!gpPrev[k]){press(k);initAudio();if(k==='a')tapped=true;}
+    else if(!now[k]&&gpPrev[k])release(k);gpPrev[k]=!!now[k];}
+  if(now.start&&!gpPrev.start){initAudio();if(scene==='play'||scene==='paused')togglePause();else{press('start');tapped=true;}}
+  else if(!now.start&&gpPrev.start)release('start');gpPrev.start=!!now.start;
+}
+const zone=document.getElementById('stickZone'),base=document.getElementById('stickBase'),knob=document.getElementById('stickKnob'),shaft=document.getElementById('stickShaft');
 let stickId=null,sx0=0,sy0=0;
-function resetStick(){stickId=null;jx=jy=0;base.style.left='';base.style.top='';knob.style.transform='';}
-zone.addEventListener('pointerdown',e=>{stickId=e.pointerId;zone.setPointerCapture(e.pointerId);sx0=e.clientX;sy0=e.clientY;base.style.left=sx0+'px';base.style.top=sy0+'px';knob.style.transform='';e.preventDefault();});
+function resetStick(){stickId=null;jx=jy=0;base.style.left='';base.style.top='';knob.style.transform='';shaft.style.height='0';}
+zone.addEventListener('pointerdown',e=>{stickId=e.pointerId;zone.setPointerCapture(e.pointerId);sx0=e.clientX;sy0=e.clientY;base.style.left=sx0+'px';base.style.top=sy0+'px';knob.style.transform='';shaft.style.height='0';e.preventDefault();});
 zone.addEventListener('pointermove',e=>{if(e.pointerId!==stickId)return;let dx=e.clientX-sx0,dy=e.clientY-sy0;const L=Math.hypot(dx,dy),R=46;if(L>R){dx=dx/L*R;dy=dy/L*R;}
-  knob.style.transform=`translate(${dx}px,${dy}px)`;jx=Math.abs(dx/R)<.22?0:dx/R;jy=Math.abs(dy/R)<.28?0:dy/R;});
+  const Lc=Math.min(L,R);knob.style.transform=`translate(${dx}px,${dy}px) scale(${1+Lc/R*.08})`;shaft.style.height=Lc+'px';shaft.style.transform=`rotate(${Math.atan2(-dx,dy)}rad)`;jx=Math.abs(dx/R)<.22?0:dx/R;jy=Math.abs(dy/R)<.28?0:dy/R;});
 ['pointerup','pointercancel','lostpointercapture'].forEach(ev=>zone.addEventListener(ev,e=>{if(e.pointerId===stickId)resetStick();}));
 [['bA','a'],['bB','b'],['bC','c']].forEach(([id,k])=>{const el=document.getElementById(id);
   el.addEventListener('pointerdown',e=>{e.preventDefault();el.setPointerCapture(e.pointerId);el.classList.add('on');press(k);});
@@ -1185,7 +1208,7 @@ function drawHUD(){
   if(goT>0&&!waveActive&&Math.floor(gT*3)%2===0){txt('VAI!',W-70,H/2-10,30,'#ffd23f');poly([W-44,H/2-22,W-20,H/2-10,W-44,H/2+2],'#ffd23f',2.5);}
   if(bannerT>0){const a=Math.min(1,bannerT*2);ctx.globalAlpha=a;rr(W/2-180,118,360,82,12,'rgba(21,17,14,.85)',3);txt(st.name,W/2,140,22,'#5ec8f2');txt(st.title,W/2,174,36,'#ffd23f');ctx.globalAlpha=1;}
   if(hintT>0&&bannerT<=0){const a=Math.min(1,hintT);ctx.globalAlpha=a;rr(W/2-160,72,320,40,10,'rgba(21,17,14,.75)',0);
-    btxt(isTouch?'Direcional à esquerda • SOCO • PULO + SOCO = voadora':'Setas: andar • J soco • K pulo • L especial',W/2,84,11,'#fff6e0');
+    btxt(isTouch?'Direcional à esquerda • SOCO • PULO + SOCO = voadora':'Setas ou arcade stick: andar • J/A soco • K/B pulo • L/RT especial',W/2,84,11,'#fff6e0');
     btxt('Encoste nos cães para soltá-los!',W/2,100,11,'#ffd23f');ctx.globalAlpha=1;}
   bC.classList.toggle('ready',P.meter>=1);
 }
@@ -1268,6 +1291,7 @@ function togglePause(force){if(scene!=='play'&&scene!=='paused')return;if(force=
 let last=performance.now();
 function frame(now){
   let dt=Math.min(.05,(now-last)/1000);last=now;
+  try{pollPads();}catch(err){}
   try{tick(dt);}catch(err){console.error(err);}
   for(const k in just)just[k]=false;tapped=false;
   requestAnimationFrame(frame);
